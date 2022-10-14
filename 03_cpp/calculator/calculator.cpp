@@ -36,6 +36,5 @@ int main()
 			cout << pow(x, y) << endl;
         }
 	}
-	system("pause");
 	return 0;
 }

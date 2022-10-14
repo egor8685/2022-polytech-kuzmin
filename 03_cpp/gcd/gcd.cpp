@@ -34,6 +34,5 @@ int main() {
   assert(gcd(30, 18) == 6);
   assert(gcd(-30, -18) == 6);
   assert(gcd(270, 192) == 6);
-
   return 0;
 }
