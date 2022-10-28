@@ -3,5 +3,6 @@
 int main()
 {
 	print ()
+    system("PAUSE");
 	return 0;
 }
