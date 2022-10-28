@@ -5,7 +5,7 @@ int gcd(int a, int b) {
   
   if (a < 0) 
   a *= -1;
-  if (b < 0)]
+  if (b < 0)
   b *= -1;
   if (b == 0)
         return a;
@@ -16,7 +16,7 @@ int gcd(int a, int b) {
 int main()
 {
     int a, b;
-    cout<<"Please, enter your numbers"<<endl;
+    cout<<"Enter your numbers"<<endl;
     cin>>a;
     cin>>b;
     cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd(a, b);
@@ -30,6 +30,6 @@ int main()
   assert(gcd(-30, -18) == 6);
   assert(gcd(270, 192) == 6);
     system("pause");
-    return(0);
+    return 0;
 
 }
