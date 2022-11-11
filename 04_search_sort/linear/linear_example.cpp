@@ -1,13 +1,14 @@
 #include <iostream>
+#include "linear_function.cpp"
 using namespace std;
 
-int main() int main() 
+int main()
 {
     int a;
     int arr[] = {1, 2, 3, 3, 3};
-    cout << "Enter element:" << endl;
+    cout << "Element:" << endl;
     cin >> a;
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n = size of(arr) / size of(arr[0]);
     int result[] = { 1, 2, 3, 3, 3 };
 
     int num = count(arr, n, a, result);
