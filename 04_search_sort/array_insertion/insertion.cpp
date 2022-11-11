@@ -2,7 +2,8 @@
 #include "insertion_function.cpp"
 using namespace std;
 
-int main(){
+int main()
+{
 
 int arr[]={1,4,7,2,4,12,432,22,31,22,};
 
