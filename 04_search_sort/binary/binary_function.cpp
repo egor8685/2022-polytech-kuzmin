@@ -1,6 +1,6 @@
 #include <iostream>
-
 int bsearch(int arr[], int s, int e, int a) 
+
 {
 	if (e >= 1)
 	{
