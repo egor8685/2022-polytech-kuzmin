@@ -6,9 +6,9 @@ int main()
 {
     int a;
     int arr[] = {1, 2, 3, 3, 3};
-    cout << "Element:" << endl;
+    cout << "Enter element:" << endl;
     cin >> a;
-    int n = size of(arr) / size of(arr[0]);
+    int n = sizeof(arr) / sizeof(arr[0]);
     int result[] = { 1, 2, 3, 3, 3 };
 
     int num = count(arr, n, a, result);

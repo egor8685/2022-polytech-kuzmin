@@ -1,4 +1,5 @@
-#include <iosteream>
+#include <iostream>
+#include "binary_function.cpp"
 using namespace std;
 
 int main()
