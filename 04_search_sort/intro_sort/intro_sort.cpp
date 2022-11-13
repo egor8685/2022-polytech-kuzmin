@@ -18,10 +18,12 @@ void print_array(int arr[], int n, bool show_index = false)
     std::cout << "{";
     for(auto i = 0; i < n; ++i) {
         if(show_index)
-            std::cout << i << ": ";
+            std::cout << i << ":";
         std::cout << arr[i];
         if(i + 1 != n)
-            std::cout << ", ";
+            std::cout << ",";
+    }
+     std::cout << "}" << std::endl;
 }
 
 int main()
