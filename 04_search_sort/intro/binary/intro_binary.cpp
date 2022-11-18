@@ -1,20 +1,20 @@
 #include <iostream>
-
+#include <ctime>
 using namespace std;
 
-int binary(int arr[], int a, int b, int c)
+int binary(int arr[], int a, int b, int x)
 {
     if (b >= 1)
     {
-        int b = a + (b - a) / 2;
-        if (arr[b] == c)
-            return b;
+        int m = a + (b - a) / 2;
+        if (arr[m] == x)
+            return m;
 
-        if (arr[b] > c)
-            return binary(arr, a, b - 1, c);
+        if (arr[m] > x)
+            return binary(arr, a, m - 1, x);
 
-        if (arr[b] < c)
-            return binary(arr, b + 1, r, c);
+        if (arr[m] < x)
+            return binary(arr, m + 1, b, x);
     }
 
     return -1;
@@ -22,9 +22,9 @@ int binary(int arr[], int a, int b, int c)
 
 int main()
 {
-    int c;
-    cout << "Element" << endl;
-    cin >> c;
+    int x;
+    cout << "Enter your element" << endl;
+    cin >> x;
     int arr[] = { -996, -960, -944, -887, -865, -860, -846, -831, -790, -785, -700, -691, -662, -662, -647,
 -640, -587, -532, -524, -519, -501, -497, -475, -471, -461, -457, -452, -442, -441, -416,
 -412, -411, -390, -389, -358, -341, -306, -257, -253, -252, -248, -208, -143, -134, -82,
@@ -33,15 +33,20 @@ int main()
 740, 766, 780, 782, 794, 802, 829, 832, 837, 858, 875, 881, 882, 883, 883, 947, 959 };
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    int result = binary(arr, 0, n - 1, c);
+    int result = binary(arr, 0, n - 1, x);
     if (result == -1)
     {
-        cout << "Element is not present in array" << endl;
+        cout << "Your element isn't in array" << endl;
+        
     }
     else
     {
-        cout << "Element is present at index " << result << endl;
+        cout << "Your element is at index " << result << endl;
     }
+     unsigned int end_time = clock();
+
+    
+    cout << "runtime = " << end_time << endl;
     system("pause");
     return 0;
 }
