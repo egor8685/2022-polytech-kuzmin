@@ -1,5 +1,9 @@
-cmake_minimum_required(VERSION 3.1...3.24)
-project(
-        VERSION 1.0
-        LANGUAGES CXX)
-add_executable(.cpp)
+cmake_minimum_required()
+
+project(sort)
+
+add_executable(sort ex.cpp fill_random.cpp quick_sort.cpp sort.cpp swap.cpp)
+
+find_package(OpenMP REQUIRED)
+
+target_link_libraries(sort PRIVATE OpenMP::OpenMP_CXX)
