@@ -2,7 +2,7 @@ cmake_minimum_required()
 
 project(sort)
 
-add_executable(sort ex.cpp fill_random.cpp quick_sort.cpp sort.cpp swap.cpp)
+add_executable(sort fill_array_random.cpp quick_sort.cpp selection_sort.cpp time.cpp)
 
 find_package(OpenMP REQUIRED)
 
