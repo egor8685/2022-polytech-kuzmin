@@ -1,35 +1,56 @@
-#include <iostream>
+#include <chrono>
 #include <fstream>
-#include <cmath>
+#include <iostream>
+#include <thread>
 
-using namespace std;
+void get_cpuinfo(unsigned long long int fields[]) {
+  char line[3];
+  std::ifstream in("/proc/stat", std::ios_base::in);
+  in >> line;
+  for (int i = 0; i != 10; ++i) {
+    if (in.is_open()) {
+      in >> fields[i];
+    } else {
+      exit(0);
+    }
+  }
+}
 
-int main()
-{
-	char parameter[20];   
-	int value;   
-	char unit[3];   
-	double memory[2];
+int main() {
+  unsigned long long int fields[10], total_tick, total_tick_old, idle, idle_old,
+      del_total_tick, del_idle;
+  double percent_usage;
 
-	ifstream in("/proc/meminfo", std::ios_base::in);  
-	for(int i = 0; i < 2; i++) 
-	{
-		in >> parameter >> value >> unit;
-		memory[i] = value;
-	}
-	double p = (memory[0] - memory[1]) / memory[0];
-	int percentage = p * 100;
-int count_bars = round(percentage/10);
-	for (int i = 0; i < count_bars; i++)
-	{
-		cout << "| ";
-	}
-	for (int i = 0; i < (10 - count_bars); i++)
-	{
-		cout << ". ";
-	}
-	cout << " " << percentage << "%" << endl;
-	system("pause");
-    return 0;
+  get_cpuinfo(fields);
 
+  total_tick = 0;
+  for (int i = 0; i < 10; i++) {
+    total_tick += fields[i];
+  }
+  idle = fields[3]; /* idle ticks index */
+
+  while (true) {
+    std::chrono::milliseconds timespan(1000); // or whatever
+    std::this_thread::sleep_for(timespan);
+
+    total_tick_old = total_tick;
+    idle_old = idle;
+
+    get_cpuinfo(fields);
+
+    total_tick = 0;
+    for (int i = 0; i < 10; i++) {
+      total_tick += fields[i];
+    }
+    idle = fields[3];
+
+    del_total_tick = total_tick - total_tick_old;
+    del_idle = idle - idle_old;
+
+    percent_usage =
+        ((del_total_tick - del_idle) / (double)del_total_tick) * 100;
+    printf("Total CPU Usage: %3.2lf%%\n", percent_usage);
+  }
+
+  return 0;
 }
