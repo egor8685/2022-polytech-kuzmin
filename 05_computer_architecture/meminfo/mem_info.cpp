@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <cmath>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ int main()
 	}
 	double p = (memory[0] - memory[1]) / memory[0];
 	int percentage = p * 100;
-    int count_bars = round(percentage/10);
+int count_bars = round(percentage/10);
 	for (int i = 0; i < count_bars; i++)
 	{
 		cout << "| ";
