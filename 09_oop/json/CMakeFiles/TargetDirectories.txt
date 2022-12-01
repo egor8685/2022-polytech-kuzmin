@@ -1,0 +1,4 @@
+/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles/rebuild_cache.dir
+/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles/edit_cache.dir
+/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles/test.dir
+/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles/tests.dir
