@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/egor/2022-polytech-kuzmin/08_oop/intro/String.h
+iostream
+-
+cstring
+-
+
+/home/egor/2022-polytech-kuzmin/08_oop/intro/main.cpp
+String.h
+/home/egor/2022-polytech-kuzmin/08_oop/intro/String.h
+

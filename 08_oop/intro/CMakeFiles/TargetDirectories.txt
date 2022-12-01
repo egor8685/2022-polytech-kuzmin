@@ -1,0 +1,3 @@
+/home/egor/2022-polytech-kuzmin/08_oop/intro/CMakeFiles/rebuild_cache.dir
+/home/egor/2022-polytech-kuzmin/08_oop/intro/CMakeFiles/edit_cache.dir
+/home/egor/2022-polytech-kuzmin/08_oop/intro/CMakeFiles/Intro.dir
