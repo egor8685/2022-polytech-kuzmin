@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/egor/2022-polytech-kuzmin/09_oop/json/test_json.cpp" "/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles/tests.dir/test_json.cpp.o"
+  "/home/egor/2022-polytech-kuzmin/09_oop/json/a.cpp" "/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles/tests.dir/a.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

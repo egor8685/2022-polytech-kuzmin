@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/egor/2022-polytech-kuzmin/09_oop/json/json.h
+/home/egor/2022-polytech-kuzmin/09_oop/json/a.cpp
 iostream
+-
+sstream
 -
 string
 -
 unordered_map
 -
-
-/home/egor/2022-polytech-kuzmin/09_oop/json/test_json.cpp
-json.h
-/home/egor/2022-polytech-kuzmin/09_oop/json/json.h
 doctest.h
 -
 iostream

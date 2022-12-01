@@ -57,27 +57,27 @@ include CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests.dir/flags.make
 
-CMakeFiles/tests.dir/test_json.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/test_json.cpp.o: test_json.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/test_json.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test_json.cpp.o -c /home/egor/2022-polytech-kuzmin/09_oop/json/test_json.cpp
+CMakeFiles/tests.dir/a.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/a.cpp.o: a.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/a.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/a.cpp.o -c /home/egor/2022-polytech-kuzmin/09_oop/json/a.cpp
 
-CMakeFiles/tests.dir/test_json.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test_json.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/egor/2022-polytech-kuzmin/09_oop/json/test_json.cpp > CMakeFiles/tests.dir/test_json.cpp.i
+CMakeFiles/tests.dir/a.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/a.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/egor/2022-polytech-kuzmin/09_oop/json/a.cpp > CMakeFiles/tests.dir/a.cpp.i
 
-CMakeFiles/tests.dir/test_json.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test_json.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/egor/2022-polytech-kuzmin/09_oop/json/test_json.cpp -o CMakeFiles/tests.dir/test_json.cpp.s
+CMakeFiles/tests.dir/a.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/a.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/egor/2022-polytech-kuzmin/09_oop/json/a.cpp -o CMakeFiles/tests.dir/a.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/test_json.cpp.o"
+"CMakeFiles/tests.dir/a.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests: CMakeFiles/tests.dir/test_json.cpp.o
+tests: CMakeFiles/tests.dir/a.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/egor/2022-polytech-kuzmin/09_oop/json/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests"

@@ -134,32 +134,32 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
-test_json.o: test_json.cpp.o
+a.o: a.cpp.o
 
-.PHONY : test_json.o
+.PHONY : a.o
 
 # target to build an object file
-test_json.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_json.cpp.o
-.PHONY : test_json.cpp.o
+a.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/a.cpp.o
+.PHONY : a.cpp.o
 
-test_json.i: test_json.cpp.i
+a.i: a.cpp.i
 
-.PHONY : test_json.i
+.PHONY : a.i
 
 # target to preprocess a source file
-test_json.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_json.cpp.i
-.PHONY : test_json.cpp.i
+a.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/a.cpp.i
+.PHONY : a.cpp.i
 
-test_json.s: test_json.cpp.s
+a.s: a.cpp.s
 
-.PHONY : test_json.s
+.PHONY : a.s
 
 # target to generate assembly for a file
-test_json.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_json.cpp.s
-.PHONY : test_json.cpp.s
+a.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/a.cpp.s
+.PHONY : a.cpp.s
 
 # Help Target
 help:
@@ -171,9 +171,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... tests"
-	@echo "... test_json.o"
-	@echo "... test_json.i"
-	@echo "... test_json.s"
+	@echo "... a.o"
+	@echo "... a.i"
+	@echo "... a.s"
 .PHONY : help
 
 
